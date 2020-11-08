@@ -1,0 +1,451 @@
+.Connect {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: #ea5d5a;
+  padding: 8px;
+  color: white;
+  margin-bottom: 5px;
+  transition: transform 0.5s;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: playfair display;
+  text-align: center;
+}
+
+.Connect:hover {
+  /* -ms-transform: scale(1);
+  -webkit-transform: scale(1);  */
+  transform: scale(1.1);
+}
+
+
+
+.Categories {
+  display: flex;
+  margin-left: 8%;
+  justify-content: space-between;
+}
+
+.MyNav {
+  align-items: center;
+  background-color: #a3ceee;
+  /* animation: backGradient 3s infinite alternate-reverse; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+  position: fixed;
+  z-index: 3;
+  opacity: 0.98;
+  /* position: fixed; */
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.NavHamDropdown {
+  background-color: #193964;
+  /* visibility: hidden; */
+  /* animation: backGradient 3s infinite alternate-reverse; */
+  z-index: 3;
+  opacity: 0.98;
+  padding-top: 10% !important;
+  /* padding: 5%; */
+  width: 0px;
+  /* padding: 15px; */
+  position: fixed;
+  visibility: visible;
+  background-color: rgb(25, 57, 100);
+  height: 100%;
+  overflow-x: hidden;
+  transition: 0.5s;
+  right: 0;
+}
+
+.NavBarCapsulesSticky {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: 18px;
+}
+
+.SocialWrapper {
+  /* background-color: lightsteelblue; */
+  /* animation: backGradient 3s infinite alternate-reverse; */
+  display: flex;
+  /* margin-right: 25px; */
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
+  /* transition: transform 0.5s; */
+}
+.Social {
+  /* margin-top: 15px;
+  margin-left: 20px;
+  margin-bottom: 15px; */
+  transition: transform 0.5s;
+  position: relative;
+}
+
+.Social :hover {
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1.2);
+}
+
+.DbgLogo {
+  /* margin-left: 50px; */
+  /* margin-top: 15px;
+  margin-bottom: 10px; */
+  position: "absolute";
+  width: 63px;
+  height: 55px;
+  z-index: 5;
+}
+
+
+.Tabs {
+  align-self: center;
+  border-radius: 10px;
+  background: #f8dd74;
+  color: #193964;
+  padding: 8px;
+  width: 160px;
+  text-align: center;
+  margin-bottom: 5px;
+  transition: transform 0.5s;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: playfair display;
+}
+
+.Tabs:hover {
+  align-self: center;
+  border-radius: 10px;
+  color: #193964;
+  /* background: rgb(142, 178, 224); */
+  padding: 8px;
+  width: 160px;
+  text-align: center;
+  margin-bottom: 5px;
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.ButtonStyle {
+  margin-right: 5px;
+  background-color: mediumaquamarine;
+  font-size: 35px;
+}
+
+.SubHeading {
+  color: rgb(78, 74, 134);
+  font-size: 35px;
+  font-weight: bolder;
+  padding: 8px;
+  flex-grow: 1;
+  margin-bottom: 8px;
+}
+
+.Footer {
+  padding: 5%;
+  background-color: #083865;
+  color: white;
+  /* height: 275px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  /* font-family: playfair display; */
+  /* animation: backGradient 3s infinite alternate-reverse; */
+  /* animation-delay: 12.75s; */
+}
+
+.ProjectCard {
+  transition: 0.3s;
+  position: relative;
+  width: 300px;
+  height: 380px;
+  align-items: center;
+  /* padding: 4%; */
+  justify-content: space-between;
+}
+
+.ProjectCard:hover {
+  transform: translate(0, -10px) !important;
+}
+
+/* .card:hover { */
+/* background-color: rgb(192, 192, 192) !important; */
+/* background-color: rgb(224, 232, 245); */
+/* color: rgb(68, 68, 68) !important; */
+/* } */
+
+.card {
+  /* background-color: #d4d4d4 !important; */
+  /* color: rgb(120, 120, 120) !important; */
+  border-radius: 10px !important;
+}
+
+.ProjectCardOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  overflow: hidden;
+  width: 0;
+  /* padding-left: -1; */
+  height: 100%;
+  transition: 0.5s ease;
+  border-radius: 10px;
+  color: #515050;
+}
+
+.ProjectCardOverlayVisible {
+  width: 100%;
+  border: solid;
+  border-color: #a3ceee;
+  border-width: 3px;
+}
+
+.ProjectCardLayoverFocusOut {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(255, 255, 255);
+  /* overflow: hidden; */
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  /* transition: 0.5s ease; */
+  z-index: -2;
+  visibility: hidden;
+}
+
+.ProjectCardText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  width: inherit;
+  height: inherit;
+  /* overflow-wrap: break-word!important;
+  word-wrap: break-word!important;
+  hyphens: auto!important;
+  word-break: break-all; */
+  /* color: black; */
+  font-size: 20px;
+  flex-shrink: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  /* white-space: nowrap; */
+}
+
+.CardSubHeading {
+  padding-top: 15px;
+  font-size: 15px;
+}
+
+/* .card:hover .CardSubHeading {
+  font-size: 12px;
+} */
+
+.ProjectNameLighter {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+  color: #193964;
+  justify-content: center;
+  /* font-family: playfair display; */
+  /* border: double; */
+  /* border-radius: px; */
+  font-size: 25px;
+  text-align: center;
+}
+
+/* .card:hover .ProjectNameLighter {
+  background-color: rgb(200, 202, 204) !important;
+  font-weight: 80%;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: black;
+  border: none;
+} */
+
+.ProjectContentLighter {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  color: #515050;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* border: double; */
+  /* border-radius: 4px; */
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #a3ceee;
+}
+
+.card:hover .ProjectContentLighter {
+  /* background-color: rgb(224, 232, 245) !important; */
+  border: none;
+  color: #515050;
+}
+
+.SkillsCardLayover {
+  position: absolute;
+  /* background-color: "lightsteelblue" !important; */
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  /* border-radius: 10px !important; */
+}
+
+.card:hover .SkillsCardLayover {
+  visibility: visible;
+  border-radius: 10px !important;
+}
+
+/* .Project:hover .card {
+  opacity: 0.6 !important;
+}
+
+.Project .card:hover {
+  opacity: 1 !important;
+} */
+
+#GetInTouch {
+  position: fixed !important;
+  bottom: 30px !important;
+  right: 30px !important;
+  color: rgb(68, 68, 68);
+  font-weight: bolder;
+  /* height: 30%; */
+  /* width: 2%; */
+  z-index: 10;
+  /* writing-mode: "tb-lr"; */
+  font-family: papyrus;
+}
+
+#GrabResume {
+  position: fixed;
+  bottom: 80px;
+  right: 30px;
+  color: rgb(68, 68, 68);
+  font-weight: bolder;
+  /* height: 30%; */
+  /* width: 2%; */
+  z-index: 10;
+  /* writing-mode: "tb-lr"; */
+  font-family: papyrus;
+}
+
+.LineInsideDiv {
+  /* border-left: 1px solid black; */
+  /* height: 400px; */
+  width: 20px;
+  /* width:400px;
+    height:200px; */
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    transparent calc(50% - 0.81px),
+    rgb(68, 68, 68) calc(50% - 0.8px),
+    rgb(68, 68, 68) calc(50% + 0.8px),
+    transparent calc(50% + 0.81px),
+    transparent 100%
+  );
+}
+
+.btn {
+  background-color: white !important;
+  color: rgb(68, 68, 68) !important;
+  font-weight: bold !important;
+}
+
+.btn:hover {
+  background-color: rgb(235, 231, 231) !important;
+}
+
+.Ex {
+  padding: 5%;
+}
+
+.ExpSub {
+  color: #515050;
+  margin: 1%;
+  text-align: left;
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 5%;
+}
+
+.Ex .ExpSub {
+  display: none;
+}
+
+.Ex:hover .ExpSub {
+  display: block;
+  width: 450px;
+}
+
+.Ex:hover {
+  justify-content: start !important;
+  /* height: 600px !important; */
+}
+
+.ExpSubResp {
+  color: #515050;
+  margin: 1%;
+  text-align: left;
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 5%;
+}
+
+.Ex .ExpSubResp {
+  display: none;
+}
+
+.Ex:hover .ExpSubResp {
+  display: block;
+  width: 300px;
+}
+
+.ArrowButton {
+  transition: transform 0.5s;
+  padding: 8px;
+  margin-bottom: 5px;
+}
+
+.ArrowButton :hover {
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1.2);
+  cursor: pointer;
+  /* visibility: hidden; */
+}
+
+.ic {
+  padding: 8px;
+  margin-bottom: 5px;
+  transition: transform 0.5s;
+}
+
+.ic:hover {
+  transform: scale(1.2);
+}
+
